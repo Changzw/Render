@@ -18,7 +18,8 @@
   [super viewDidLoad];
   
   _items = @[
-  
+    @"GLKRenderColorViewController",
+    @"RenderImageViewController",
   ];
   [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:[UITableViewCell description]];
 }

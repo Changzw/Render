@@ -13,6 +13,10 @@
 		072168B727F5EFE600FE1021 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 072168B527F5EFE600FE1021 /* LaunchScreen.storyboard */; };
 		072168BA27F5EFE600FE1021 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 072168B927F5EFE600FE1021 /* main.m */; };
 		07216A2727F5F3DC00FE1021 /* Flow.m in Sources */ = {isa = PBXBuildFile; fileRef = 07216A2627F5F3DC00FE1021 /* Flow.m */; };
+		0729343727FD44E100AAAFED /* GLKRenderColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0729343627FD44E100AAAFED /* GLKRenderColorViewController.m */; };
+		0729359E27FD48FD00AAAFED /* RenderImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0729359D27FD48FD00AAAFED /* RenderImageViewController.m */; };
+		072935A027FD494300AAAFED /* kunkun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0729359F27FD494300AAAFED /* kunkun.jpg */; };
+		072935AA27FD49E700AAAFED /* UIColor+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 072935A927FD49E700AAAFED /* UIColor+extension.m */; };
 		098F947ED164C57FCFD4ABE8 /* Pods_Render.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B026FD7EA89DA77C11724A /* Pods_Render.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +32,14 @@
 		072168B927F5EFE600FE1021 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		07216A2527F5F3DC00FE1021 /* Flow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Flow.h; sourceTree = "<group>"; };
 		07216A2627F5F3DC00FE1021 /* Flow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Flow.m; sourceTree = "<group>"; };
+		0729343527FD44E100AAAFED /* GLKRenderColorViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKRenderColorViewController.h; sourceTree = "<group>"; };
+		0729343627FD44E100AAAFED /* GLKRenderColorViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKRenderColorViewController.m; sourceTree = "<group>"; };
+		0729359B27FD474000AAAFED /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0729359C27FD48FD00AAAFED /* RenderImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenderImageViewController.h; sourceTree = "<group>"; };
+		0729359D27FD48FD00AAAFED /* RenderImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RenderImageViewController.m; sourceTree = "<group>"; };
+		0729359F27FD494300AAAFED /* kunkun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kunkun.jpg; sourceTree = "<group>"; };
+		072935A827FD49E700AAAFED /* UIColor+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+extension.h"; sourceTree = "<group>"; };
+		072935A927FD49E700AAAFED /* UIColor+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extension.m"; sourceTree = "<group>"; };
 		15E0A524F2D2526AB81B2B32 /* Pods-Render.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Render.debug.xcconfig"; path = "Target Support Files/Pods-Render/Pods-Render.debug.xcconfig"; sourceTree = "<group>"; };
 		64B026FD7EA89DA77C11724A /* Pods_Render.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Render.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D6070139FC76BC1A203517 /* Pods-Render.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Render.release.xcconfig"; path = "Target Support Files/Pods-Render/Pods-Render.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +78,7 @@
 		072168A627F5EFE500FE1021 /* Render */ = {
 			isa = PBXGroup;
 			children = (
+				072935A127FD498700AAAFED /* Tools */,
 				07216B8B27F5F9AC00FE1021 /* OpenGL */,
 				07216A2427F5F3C100FE1021 /* Coordinator */,
 				07216A2327F5F39900FE1021 /* App */,
@@ -78,12 +91,14 @@
 		07216A2327F5F39900FE1021 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				0729359F27FD494300AAAFED /* kunkun.jpg */,
 				072168B327F5EFE600FE1021 /* Assets.xcassets */,
 				072168B527F5EFE600FE1021 /* LaunchScreen.storyboard */,
 				072168B827F5EFE600FE1021 /* Info.plist */,
 				072168B927F5EFE600FE1021 /* main.m */,
 				072168A727F5EFE500FE1021 /* AppDelegate.h */,
 				072168A827F5EFE500FE1021 /* AppDelegate.m */,
+				0729359B27FD474000AAAFED /* PrefixHeader.pch */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -100,8 +115,21 @@
 		07216B8B27F5F9AC00FE1021 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				0729343527FD44E100AAAFED /* GLKRenderColorViewController.h */,
+				0729343627FD44E100AAAFED /* GLKRenderColorViewController.m */,
+				0729359C27FD48FD00AAAFED /* RenderImageViewController.h */,
+				0729359D27FD48FD00AAAFED /* RenderImageViewController.m */,
 			);
 			path = OpenGL;
+			sourceTree = "<group>";
+		};
+		072935A127FD498700AAAFED /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				072935A827FD49E700AAAFED /* UIColor+extension.h */,
+				072935A927FD49E700AAAFED /* UIColor+extension.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 		44862FFA82DD93E2820B1C8D /* Pods */ = {
@@ -110,7 +138,6 @@
 				15E0A524F2D2526AB81B2B32 /* Pods-Render.debug.xcconfig */,
 				F0D6070139FC76BC1A203517 /* Pods-Render.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -182,6 +209,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				072168B727F5EFE600FE1021 /* LaunchScreen.storyboard in Resources */,
+				072935A027FD494300AAAFED /* kunkun.jpg in Resources */,
 				072168B427F5EFE600FE1021 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -237,6 +265,9 @@
 			files = (
 				072168AF27F5EFE500FE1021 /* ContentViewController.m in Sources */,
 				07216A2727F5F3DC00FE1021 /* Flow.m in Sources */,
+				0729359E27FD48FD00AAAFED /* RenderImageViewController.m in Sources */,
+				072935AA27FD49E700AAAFED /* UIColor+extension.m in Sources */,
+				0729343727FD44E100AAAFED /* GLKRenderColorViewController.m in Sources */,
 				072168A927F5EFE500FE1021 /* AppDelegate.m in Sources */,
 				072168BA27F5EFE600FE1021 /* main.m in Sources */,
 			);
@@ -306,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -358,7 +389,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -375,6 +406,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LH8PPFBRK4;
+				GCC_PREFIX_HEADER = "${PROJECT}/App/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Render/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -382,7 +414,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -404,6 +436,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LH8PPFBRK4;
+				GCC_PREFIX_HEADER = "${PROJECT}/App/PrefixHeader.pch";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Render/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -411,7 +444,7 @@
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

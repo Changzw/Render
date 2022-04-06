@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  Render
+//
+//  Created by Fri on 2022/4/6.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+@import OpenGLES;
+@import GLKit;
+#import "UIColor+extension.h"
+
+#endif /* PrefixHeader_pch */
