@@ -20,6 +20,8 @@
   _items = @[
     @"GLKRenderColorViewController",
     @"RenderImageViewController",
+    @"GLSLViewController",
+    @"CubeImageViewController",
   ];
   [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:[UITableViewCell description]];
 }

@@ -17,6 +17,10 @@
 		0729359E27FD48FD00AAAFED /* RenderImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0729359D27FD48FD00AAAFED /* RenderImageViewController.m */; };
 		072935A027FD494300AAAFED /* kunkun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0729359F27FD494300AAAFED /* kunkun.jpg */; };
 		072935AA27FD49E700AAAFED /* UIColor+extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 072935A927FD49E700AAAFED /* UIColor+extension.m */; };
+		07F9385E28029D2500D5C63E /* GLKDrawingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9385D28029D2500D5C63E /* GLKDrawingView.m */; };
+		07F9386128029D9300D5C63E /* GLSLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9386028029D9300D5C63E /* GLSLViewController.m */; };
+		07F9386528029E0300D5C63E /* CubeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9386428029E0300D5C63E /* CubeImageViewController.m */; };
+		07F9386D2802F98000D5C63E /* CAEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9386C2802F98000D5C63E /* CAEAGLView.m */; };
 		098F947ED164C57FCFD4ABE8 /* Pods_Render.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B026FD7EA89DA77C11724A /* Pods_Render.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +44,16 @@
 		0729359F27FD494300AAAFED /* kunkun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kunkun.jpg; sourceTree = "<group>"; };
 		072935A827FD49E700AAAFED /* UIColor+extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+extension.h"; sourceTree = "<group>"; };
 		072935A927FD49E700AAAFED /* UIColor+extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+extension.m"; sourceTree = "<group>"; };
+		07F9385C28029D2500D5C63E /* GLKDrawingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLKDrawingView.h; sourceTree = "<group>"; };
+		07F9385D28029D2500D5C63E /* GLKDrawingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLKDrawingView.m; sourceTree = "<group>"; };
+		07F9385F28029D9300D5C63E /* GLSLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GLSLViewController.h; sourceTree = "<group>"; };
+		07F9386028029D9300D5C63E /* GLSLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLSLViewController.m; sourceTree = "<group>"; };
+		07F9386328029E0300D5C63E /* CubeImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CubeImageViewController.h; sourceTree = "<group>"; };
+		07F9386428029E0300D5C63E /* CubeImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CubeImageViewController.m; sourceTree = "<group>"; };
+		07F938662802F1B500D5C63E /* shaderv.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderv.vsh; sourceTree = "<group>"; };
+		07F9386A2802F73D00D5C63E /* shaderf.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
+		07F9386B2802F98000D5C63E /* CAEAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAEAGLView.h; sourceTree = "<group>"; };
+		07F9386C2802F98000D5C63E /* CAEAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEAGLView.m; sourceTree = "<group>"; };
 		15E0A524F2D2526AB81B2B32 /* Pods-Render.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Render.debug.xcconfig"; path = "Target Support Files/Pods-Render/Pods-Render.debug.xcconfig"; sourceTree = "<group>"; };
 		64B026FD7EA89DA77C11724A /* Pods_Render.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Render.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D6070139FC76BC1A203517 /* Pods-Render.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Render.release.xcconfig"; path = "Target Support Files/Pods-Render/Pods-Render.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +129,8 @@
 		07216B8B27F5F9AC00FE1021 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				07F9386228029DE900D5C63E /* CubeImage */,
+				07F9385B28029CF700D5C63E /* GLSL */,
 				0729343527FD44E100AAAFED /* GLKRenderColorViewController.h */,
 				0729343627FD44E100AAAFED /* GLKRenderColorViewController.m */,
 				0729359C27FD48FD00AAAFED /* RenderImageViewController.h */,
@@ -130,6 +146,30 @@
 				072935A927FD49E700AAAFED /* UIColor+extension.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		07F9385B28029CF700D5C63E /* GLSL */ = {
+			isa = PBXGroup;
+			children = (
+				07F9385C28029D2500D5C63E /* GLKDrawingView.h */,
+				07F9385D28029D2500D5C63E /* GLKDrawingView.m */,
+				07F9385F28029D9300D5C63E /* GLSLViewController.h */,
+				07F9386028029D9300D5C63E /* GLSLViewController.m */,
+				07F938662802F1B500D5C63E /* shaderv.vsh */,
+				07F9386A2802F73D00D5C63E /* shaderf.fsh */,
+				07F9386B2802F98000D5C63E /* CAEAGLView.h */,
+				07F9386C2802F98000D5C63E /* CAEAGLView.m */,
+			);
+			path = GLSL;
+			sourceTree = "<group>";
+		};
+		07F9386228029DE900D5C63E /* CubeImage */ = {
+			isa = PBXGroup;
+			children = (
+				07F9386328029E0300D5C63E /* CubeImageViewController.h */,
+				07F9386428029E0300D5C63E /* CubeImageViewController.m */,
+			);
+			path = CubeImage;
 			sourceTree = "<group>";
 		};
 		44862FFA82DD93E2820B1C8D /* Pods */ = {
@@ -263,7 +303,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F9386128029D9300D5C63E /* GLSLViewController.m in Sources */,
+				07F9385E28029D2500D5C63E /* GLKDrawingView.m in Sources */,
+				07F9386D2802F98000D5C63E /* CAEAGLView.m in Sources */,
 				072168AF27F5EFE500FE1021 /* ContentViewController.m in Sources */,
+				07F9386528029E0300D5C63E /* CubeImageViewController.m in Sources */,
 				07216A2727F5F3DC00FE1021 /* Flow.m in Sources */,
 				0729359E27FD48FD00AAAFED /* RenderImageViewController.m in Sources */,
 				072935AA27FD49E700AAAFED /* UIColor+extension.m in Sources */,
