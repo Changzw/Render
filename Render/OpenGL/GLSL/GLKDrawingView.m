@@ -91,8 +91,8 @@
   glViewport(self.frame.origin.x * scale, self.frame.origin.y * scale, self.frame.size.width * scale, self.frame.size.height * scale);
   
   //2.读取顶点着色程序、片元着色程序
-  NSString *vertFile = [[NSBundle mainBundle]pathForResource:@"shaderv" ofType:@"vsh"];
-  NSString *fragFile = [[NSBundle mainBundle]pathForResource:@"shaderf" ofType:@"fsh"];
+  NSString *vertFile = [[NSBundle mainBundle] pathForResource:@"shaderv.vsh" ofType:nil];
+  NSString *fragFile = [[NSBundle mainBundle] pathForResource:@"shaderf.fsh" ofType:nil];
   
   NSLog(@"vertFile:%@",vertFile);
   NSLog(@"fragFile:%@",fragFile);

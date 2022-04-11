@@ -21,6 +21,12 @@
 		07F9386128029D9300D5C63E /* GLSLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9386028029D9300D5C63E /* GLSLViewController.m */; };
 		07F9386528029E0300D5C63E /* CubeImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9386428029E0300D5C63E /* CubeImageViewController.m */; };
 		07F9386D2802F98000D5C63E /* CAEAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9386C2802F98000D5C63E /* CAEAGLView.m */; };
+		07F9386E2803065000D5C63E /* shaderf.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 07F9386A2802F73D00D5C63E /* shaderf.fsh */; };
+		07F9386F2803065000D5C63E /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 07F938662802F1B500D5C63E /* shaderv.vsh */; };
+		07F9387A280311BC00D5C63E /* GLESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F93874280311BC00D5C63E /* GLESUtils.m */; };
+		07F9387B280311BC00D5C63E /* GLESMath.c in Sources */ = {isa = PBXBuildFile; fileRef = 07F93876280311BC00D5C63E /* GLESMath.c */; };
+		07F9387E280311CF00D5C63E /* PyramidViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F9387D280311CF00D5C63E /* PyramidViewController.m */; };
+		07F938812803139300D5C63E /* PyramidView.m in Sources */ = {isa = PBXBuildFile; fileRef = 07F938802803139300D5C63E /* PyramidView.m */; };
 		098F947ED164C57FCFD4ABE8 /* Pods_Render.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B026FD7EA89DA77C11724A /* Pods_Render.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +60,16 @@
 		07F9386A2802F73D00D5C63E /* shaderf.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
 		07F9386B2802F98000D5C63E /* CAEAGLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAEAGLView.h; sourceTree = "<group>"; };
 		07F9386C2802F98000D5C63E /* CAEAGLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAEAGLView.m; sourceTree = "<group>"; };
+		07F93874280311BC00D5C63E /* GLESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESUtils.m; sourceTree = "<group>"; };
+		07F93875280311BC00D5C63E /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quaternion.h; sourceTree = "<group>"; };
+		07F93876280311BC00D5C63E /* GLESMath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLESMath.c; sourceTree = "<group>"; };
+		07F93877280311BC00D5C63E /* GLESUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESUtils.h; sourceTree = "<group>"; };
+		07F93878280311BC00D5C63E /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		07F93879280311BC00D5C63E /* GLESMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESMath.h; sourceTree = "<group>"; };
+		07F9387C280311CF00D5C63E /* PyramidViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PyramidViewController.h; sourceTree = "<group>"; };
+		07F9387D280311CF00D5C63E /* PyramidViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyramidViewController.m; sourceTree = "<group>"; };
+		07F9387F2803139300D5C63E /* PyramidView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PyramidView.h; sourceTree = "<group>"; };
+		07F938802803139300D5C63E /* PyramidView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PyramidView.m; sourceTree = "<group>"; };
 		15E0A524F2D2526AB81B2B32 /* Pods-Render.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Render.debug.xcconfig"; path = "Target Support Files/Pods-Render/Pods-Render.debug.xcconfig"; sourceTree = "<group>"; };
 		64B026FD7EA89DA77C11724A /* Pods_Render.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Render.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0D6070139FC76BC1A203517 /* Pods-Render.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Render.release.xcconfig"; path = "Target Support Files/Pods-Render/Pods-Render.release.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +145,7 @@
 		07216B8B27F5F9AC00FE1021 /* OpenGL */ = {
 			isa = PBXGroup;
 			children = (
+				07F938702803118A00D5C63E /* Pyramid */,
 				07F9386228029DE900D5C63E /* CubeImage */,
 				07F9385B28029CF700D5C63E /* GLSL */,
 				0729343527FD44E100AAAFED /* GLKRenderColorViewController.h */,
@@ -151,12 +168,12 @@
 		07F9385B28029CF700D5C63E /* GLSL */ = {
 			isa = PBXGroup;
 			children = (
+				07F938662802F1B500D5C63E /* shaderv.vsh */,
+				07F9386A2802F73D00D5C63E /* shaderf.fsh */,
 				07F9385C28029D2500D5C63E /* GLKDrawingView.h */,
 				07F9385D28029D2500D5C63E /* GLKDrawingView.m */,
 				07F9385F28029D9300D5C63E /* GLSLViewController.h */,
 				07F9386028029D9300D5C63E /* GLSLViewController.m */,
-				07F938662802F1B500D5C63E /* shaderv.vsh */,
-				07F9386A2802F73D00D5C63E /* shaderf.fsh */,
 				07F9386B2802F98000D5C63E /* CAEAGLView.h */,
 				07F9386C2802F98000D5C63E /* CAEAGLView.m */,
 			);
@@ -170,6 +187,31 @@
 				07F9386428029E0300D5C63E /* CubeImageViewController.m */,
 			);
 			path = CubeImage;
+			sourceTree = "<group>";
+		};
+		07F938702803118A00D5C63E /* Pyramid */ = {
+			isa = PBXGroup;
+			children = (
+				07F93873280311BC00D5C63E /* Utils */,
+				07F9387C280311CF00D5C63E /* PyramidViewController.h */,
+				07F9387D280311CF00D5C63E /* PyramidViewController.m */,
+				07F9387F2803139300D5C63E /* PyramidView.h */,
+				07F938802803139300D5C63E /* PyramidView.m */,
+			);
+			path = Pyramid;
+			sourceTree = "<group>";
+		};
+		07F93873280311BC00D5C63E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				07F93874280311BC00D5C63E /* GLESUtils.m */,
+				07F93875280311BC00D5C63E /* Quaternion.h */,
+				07F93876280311BC00D5C63E /* GLESMath.c */,
+				07F93877280311BC00D5C63E /* GLESUtils.h */,
+				07F93878280311BC00D5C63E /* Vector.h */,
+				07F93879280311BC00D5C63E /* GLESMath.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		44862FFA82DD93E2820B1C8D /* Pods */ = {
@@ -248,9 +290,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F9386F2803065000D5C63E /* shaderv.vsh in Resources */,
 				072168B727F5EFE600FE1021 /* LaunchScreen.storyboard in Resources */,
 				072935A027FD494300AAAFED /* kunkun.jpg in Resources */,
 				072168B427F5EFE600FE1021 /* Assets.xcassets in Resources */,
+				07F9386E2803065000D5C63E /* shaderf.fsh in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,13 +350,17 @@
 				07F9386128029D9300D5C63E /* GLSLViewController.m in Sources */,
 				07F9385E28029D2500D5C63E /* GLKDrawingView.m in Sources */,
 				07F9386D2802F98000D5C63E /* CAEAGLView.m in Sources */,
+				07F9387B280311BC00D5C63E /* GLESMath.c in Sources */,
 				072168AF27F5EFE500FE1021 /* ContentViewController.m in Sources */,
 				07F9386528029E0300D5C63E /* CubeImageViewController.m in Sources */,
 				07216A2727F5F3DC00FE1021 /* Flow.m in Sources */,
+				07F9387E280311CF00D5C63E /* PyramidViewController.m in Sources */,
+				07F938812803139300D5C63E /* PyramidView.m in Sources */,
 				0729359E27FD48FD00AAAFED /* RenderImageViewController.m in Sources */,
 				072935AA27FD49E700AAAFED /* UIColor+extension.m in Sources */,
 				0729343727FD44E100AAAFED /* GLKRenderColorViewController.m in Sources */,
 				072168A927F5EFE500FE1021 /* AppDelegate.m in Sources */,
+				07F9387A280311BC00D5C63E /* GLESUtils.m in Sources */,
 				072168BA27F5EFE600FE1021 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

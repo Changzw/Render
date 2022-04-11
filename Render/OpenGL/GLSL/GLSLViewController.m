@@ -6,19 +6,18 @@
 //
 
 #import "GLSLViewController.h"
+#import "CAEAGLView.h"
 #import "GLKDrawingView.h"
+
 @interface GLSLViewController ()
-@property(nonnull,strong) GLKDrawingView *myView;
 
 @end
 
 @implementation GLSLViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-  self.myView = (GLKDrawingView *)self.view;
+- (void)loadView {
+  [super loadView];
+  self.view = GLKDrawingView.new;
 }
-
 
 @end

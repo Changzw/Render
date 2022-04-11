@@ -56,7 +56,7 @@
   glClear(GL_COLOR_BUFFER_BIT);
   
   //1.设置视口大小
-  CGFloat scale = [[UIScreen mainScreen]scale];
+  CGFloat scale = [[UIScreen mainScreen] scale];
   glViewport(self.frame.origin.x * scale, self.frame.origin.y * scale, self.frame.size.width * scale, self.frame.size.height * scale);
   
   //2.读取顶点着色程序、片元着色程序
@@ -112,10 +112,11 @@
   //2.告诉OpenGL ES,通过glEnableVertexAttribArray，
   //3.最后数据是通过glVertexAttribPointer传递过去的。
   
+//  打开 postion 通道
   //(1)注意：第二参数字符串必须和shaderv.vsh中的输入变量：position保持一致
   GLuint position = glGetAttribLocation(self.myPrograme, "position");
   
-  //(2).设置合适的格式从buffer里面读取数据
+  //(2).设置合适的格式从buffer里面读取数据, 打开通道 id，就是顶点shader 中的对应变量名称
   glEnableVertexAttribArray(position);
   
   //(3).设置读取方式
@@ -148,7 +149,7 @@
   [self setupTexture:@"kunkun"];
   
   //11. 设置纹理采样器 sampler2D
-  glUniform1i(glGetUniformLocation(self.myPrograme, "colorMap"), 0);
+  glUniform1i(glGetUniformLocation(self.myPrograme, "colorMap"), 0);// 默认纹理 id
   
   //12.绘图
   glDrawArrays(GL_TRIANGLES, 0, 6);
@@ -157,9 +158,10 @@
   [self.myContext presentRenderbuffer:GL_RENDERBUFFER];
 }
 
-//从图片中加载纹理
+//从图片中加载纹理，纹理解压缩
 - (GLuint)setupTexture:(NSString *)fileName {
-  //1、将 UIImage 转换为 CGImageRef
+  // 1. 纹理解压缩 -> OpenGL ES
+  //1、将 UIImage 转换为 CGImageRef，解压就是重绘一下
   CGImageRef spriteImage = [UIImage imageNamed:fileName].CGImage;
   
   //判断图片是否获取成功
@@ -203,6 +205,7 @@
   CGContextRelease(spriteContext);
   
   //8、绑定纹理到默认的纹理ID（
+//  glGenTextures(1, 0); 如果只有一个纹理的时候，他的默认 id 就是 0，0 号纹理一直是激活状态的，其他的需要手动激活
   glBindTexture(GL_TEXTURE_2D, 0);
   
   //9.设置纹理属性
