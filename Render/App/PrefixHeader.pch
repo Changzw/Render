@@ -8,8 +8,10 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
-@import OpenGLES;
-@import GLKit;
+//@import OpenGLES;
+//@import GLKit;
 #import "UIColor+extension.h"
+#import <GLKit/GLKit.h>
+#import <OpenGLES/ES2/gl.h>
 
 #endif /* PrefixHeader_pch */
